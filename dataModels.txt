@@ -1,0 +1,59 @@
+// User Model
+{
+  "id": "123", // Unique identifier for the user
+  "name": "John Doe", // Full name of the user
+  "email": "john.doe@example.com", // Email address of the user
+  "password": "hashed_password", // Hashed password for security
+  "address": "123 Main St, Anytown, USA", // Address for pickup and delivery
+  "phoneNumber": "1234567890", // Phone number for contact
+  "state":"State"//state of the user,
+  "district":"district",//district of the user,
+  "pinCode":"pin"//pincode of the user,
+}
+
+
+// Product Model
+{
+  "id": "789", // Unique identifier for the product
+  "name": "Shirt", // Name of the product
+  "description": "Men's formal shirt" // Description of the product
+}
+
+// Service Model
+{
+  "id": "456", // Unique identifier for the service
+  "name": "Ironing", // Name of the service
+  "description": "Ironing service for all types of clothes" // Description of the service
+}
+
+// Pricing Model
+{
+  "id": "012", // Unique identifier for the pricing
+  "productId": "789", // Identifier of the product
+  "serviceId": "456", // Identifier of the service
+  "price": 5.00 // Price for this product-service combination
+}
+
+// Order Model
+{
+  "id": "345", // Unique identifier for the order
+  "userId": "123", // Identifier of the user who placed the order
+  "status": "Processing", // Status of the order
+  "totalItems":"10",//Total number of items in a single order
+  "totalPrice": 20.00, // Total price of the order
+  "storeLocation":"location"//location of the store
+  "city":"city"//city of the store selected
+  "phoneNumber":"98223321"//phone number of the selected store
+  "cancellation":"false"//if the order is cancelled
+  "orderDate": "2024-02-19T07:06:00Z", // Date and time when the order was placed
+}
+
+// OrderItem Model
+{
+  "id": "678", // Unique identifier for the order item
+  "orderId": "345", // Identifier of the order to which this item belongs
+  "productId": "789", // Identifier of the product
+  "serviceId": "456", // Identifier of the service
+  "quantity": 2, // Quantity of the service ordered
+  "itemPrice": 10.00 // Total price for this order item
+}
