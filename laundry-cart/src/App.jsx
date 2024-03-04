@@ -13,6 +13,7 @@ import Protected from "./components/Protected";
 // import Orders from "./components/PastOrders/Orders";
 import OrdersPage from "./Pages/OrdersPage";
 import AddAddressForm from "./components/AddNewAddress/AddAddressForm";
+import FilterPastOrder from "./components/PastOrders/FilterOrder";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
               <Route path="/products/api/add" element={<AddAddressForm />} />
             </Route>
             <Route path="/orders" element={<OrdersPage />} />
+            <Route path="/filter" element={<FilterPastOrder />} />
           </Routes>
 
           <Footer />

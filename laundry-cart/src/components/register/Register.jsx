@@ -117,7 +117,7 @@ const Register = () => {
   const handleAddressChange = (e) => {
     setaddress({ ...address, [e.target.name]: e.target.value });
   };
-  console.log(address);
+
   return (
     <div className="register-form">
       <span className="register-title">REGISTER</span>

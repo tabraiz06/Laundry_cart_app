@@ -3,7 +3,7 @@
   display: flex;
   width: 105px;
   min-height: 933px;
-  background: #5861ae 0% 0% no-repeat padding-box;
+  background: #1b6b63 0% 0% no-repeat padding-box;
   opacity: 1;
   flex-direction: column;
 }
@@ -28,12 +28,15 @@
 #moreImg {
   width: 22px;
   height: 22px;
+  border-radius: 50%;
+  background-color: #ffff;
 
   /* background: transparent url("/more.png") 0% 0% no-repeat padding-box; */
   opacity: 1;
 }
 #more {
-  background: #ffffff 0% 0% no-repeat padding-box;
+  /* background: #ffffff 0% 0% no-repeat padding-box; */
+  /* background-color: #dfe0e6; */
 }
 #lists {
   width: 25px;

@@ -10,11 +10,12 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
+  height: 76px;
 }
 .top span {
   position: absolute;
   top: 20px;
-  left: 106px;
+  left: 176px;
   width: 179px;
   height: 25px;
   text-align: left;
@@ -24,19 +25,16 @@ body {
   text-transform: capitalize;
   opacity: 1;
 }
-.top input {
-  position: absolute;
-  top: 32px;
-  left: 1124px;
-  width: 200px;
-  height: 21px;
-  opacity: 1;
+.top button {
+  cursor: pointer;
+  top: 33px;
+  left: 1098px;
+  position: relative;
+  border: none;
   outline: none;
-  border-bottom: 1px solid;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  padding: 0 25px;
+  border-radius: 10px;
+  height: 47px;
+  padding: 10px 20px;
 }
 
 .top img {
@@ -54,7 +52,7 @@ body {
 .middle span {
   position: absolute;
   top: 405px;
-  left: 684px;
+  left: 520px;
   width: 129px;
   height: 19px;
   text-align: left;
@@ -65,7 +63,7 @@ body {
 .middle button {
   position: absolute;
   top: 439px;
-  left: 695px;
+  left: 531px;
   width: 107px;
   height: 32px;
   border: 1px solid #5861ae;
@@ -80,4 +78,11 @@ body {
 }
 a {
   cursor: pointer;
+}
+.active {
+  background-color: #222b45;
+  color: #ffffff;
+  div {
+    color: #ffffff;
+  }
 }

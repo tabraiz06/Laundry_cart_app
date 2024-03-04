@@ -18,14 +18,14 @@
         outline: none;
         border-left: 0;
         border-top: 0;
-        width: 200px;
+        width: 315px;
         height: 21px;
         opacity: 1;
       }
       .serchIcon {
         position: relative;
         /* top: 119px; */
-        left: 38px;
+        left: 350px;
         width: 14px px;
         height: 15px;
         /* background: transparent url(img/search.png) 0% 0% no-repeat padding-box; */

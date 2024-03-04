@@ -11,7 +11,8 @@ const NavBar = () => {
   const Navigate = useNavigate();
   const handleLogout = () => {
     localStorage.removeItem("token");
-    Navigate("/signin");
+
+    Navigate("/");
   };
   return (
     <div className="nav-container">
@@ -30,9 +31,9 @@ const NavBar = () => {
           </NavLink>
         ) : (
           <>
-            <NavLink onClick={handleLogout} style={{ textDecoration: "none" }}>
-              Log Out
-            </NavLink>
+            <Link onClick={handleLogout} style={{ textDecoration: "none" }}>
+              <div className="logout">Log Out</div>
+            </Link>
           </>
         )}
       </div>

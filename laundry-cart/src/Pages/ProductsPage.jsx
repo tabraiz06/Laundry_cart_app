@@ -22,15 +22,13 @@ const ProductsPage = () => {
     fetchAllAddresses();
     getAllPastOrders();
   }, []);
-
+  console.log();
   return (
     <div className="products">
       <Sidebar />
       <div className="top">
-        <span>Orders | 0</span>
-
-        <input type="search" />
-        <img src={search} alt="" className="serch" />
+        <span>Orders | {PastOrders.length}</span>
+        <button onClick={() => navigate("/orders")}>View Orders</button>
       </div>
       <div id="middle">
         {display ? (

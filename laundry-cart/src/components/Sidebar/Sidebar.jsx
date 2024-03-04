@@ -9,21 +9,16 @@ const Sidebar = () => {
   return (
     <>
       <div className="main">
-        <div className="menu ">
-          <NavLink to="/">
-            <img className="home" id="" src={home} alt="" />
-          </NavLink>
-        </div>
-        <div className="menu  " id="more">
-          <NavLink to="/products">
-            <img className="home" id="moreImg" src={more} alt="" />
-          </NavLink>
-        </div>
-        <div className="menu ">
-          <NavLink to="/orders">
-            <img className="home" id="lists" src={list} alt="" />
-          </NavLink>
-        </div>
+        <NavLink to="/" className="menu ">
+          <img className="home" id="" src={home} alt="" />
+        </NavLink>
+
+        <NavLink to="/products" className="menu  " id="more">
+          <img className="home" id="moreImg" src={more} alt="" />
+        </NavLink>
+        <NavLink to="/orders" className="menu ">
+          <img className="home" id="lists" src={list} alt="" />
+        </NavLink>
       </div>
     </>
   );

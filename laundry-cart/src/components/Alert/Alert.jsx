@@ -4,7 +4,7 @@ import { RxCross2 } from "react-icons/rx";
 import { FaTriangleExclamation } from "react-icons/fa6";
 import "./alert.css";
 import { contextProvider } from "../../Context/Context";
-const Alert = ({ id }) => {
+const Alert = ({ id, setserchtoggle, serchtoggle }) => {
   const { cancelToggle, setCanceltoggle, cancelPastOrder } = contextProvider();
 
   const navigate = useNavigate();
@@ -16,7 +16,6 @@ const Alert = ({ id }) => {
           className="icon1"
           onClick={() => {
             setCanceltoggle(!cancelToggle);
-            navigate("/orders");
           }}
         />
       </div>
@@ -32,6 +31,9 @@ const Alert = ({ id }) => {
               setCanceltoggle(!cancelToggle);
               cancelPastOrder(id);
               navigate("/orders");
+              window.location.reload();
+
+              setserchtoggle(!serchtoggle);
             }}
           >
             Proceed

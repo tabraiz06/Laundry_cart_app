@@ -59,3 +59,6 @@
   color: #ffffff;
   cursor: pointer;
 }
+.logout {
+  background-color: red;
+}

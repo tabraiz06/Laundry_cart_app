@@ -5,6 +5,7 @@ import tick from "./tick.svg";
 import { contextProvider } from "../../Context/Context";
 import AddAddressForm from "../AddNewAddress/AddAddressForm";
 import { useNavigate } from "react-router-dom";
+import OrderConfirm from "../orderConfirm/OrderConfirm";
 
 const OrderSummery = ({ orders }) => {
   const products = [];
@@ -27,6 +28,7 @@ const OrderSummery = ({ orders }) => {
     setSummaryToggle,
     fetchUserAddresses,
     fetchAllAddresses,
+    OrderConfimation,
   } = contextProvider();
   const navigate = useNavigate();
   const [selectAddress, setSelectAddress] = useState("");
@@ -97,6 +99,7 @@ const OrderSummery = ({ orders }) => {
       );
 
       setOrderConfimation(true);
+
       setSummaryToggle(!summaryToggle);
 
       setTimeout(() => {
