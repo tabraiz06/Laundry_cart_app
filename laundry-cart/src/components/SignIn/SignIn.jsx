@@ -6,9 +6,9 @@ import { contextProvider } from "../../Context/Context";
 import { ToastContainer, toast } from "react-toastify";
 const SignIn = () => {
   const [credentials, setCredentials] = useState({
-    email: "",
+    email: "test@gmail.com",
     phoneNumber: "",
-    password: "",
+    password: "123456",
   });
   const { getAllPastOrders, PastOrders, userName, setUserName } =
     contextProvider();
